@@ -1,6 +1,6 @@
 # SQL-data-challange-datalemur- DB used - Postgree SQL
 
-# 1 Data science skills question for Linkedin 
+# Linkedin - Data science skills question Linkedin 
 
 With T as (SELECT candidate_id, count(skill) FROM candidates
 where skill IN ('Python', 'Tableau', 'PostgreSQL') 
@@ -11,7 +11,7 @@ select Candidate_id from T;
 
 
 
-# Facebook pages with no likes question
+# Facebook - pages with no likes question
 
 with T as (SELECT pages.page_id, COUNT(page_likes.user_id) 
 FROM pages LEFT JOIN page_likes
